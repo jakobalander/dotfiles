@@ -1,6 +1,7 @@
 set nocompatible
 set t_Co=256
 set number
+colorscheme desert
 syntax enable
 filetype indent plugin on
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
