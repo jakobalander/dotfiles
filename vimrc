@@ -7,6 +7,7 @@ au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileTYpe c set cinoptions=:0 foldmethod=syntax foldnestmax=1
 autocmd BufWritePre *.py :%s/\s\+$//e
 
+set rtp+=~/.vim/bundle/vundle/
 " Setting up Vundle - the vim plugin bundler
 	let iCanHazVundle=1
      	let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
@@ -21,7 +22,8 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 	call vundle#rc()
         Bundle 'gmarik/vundle'
 	"Add your bundles here
-	Bundle 'Lokaltog/vim-powerline'
+	Bundle 'bling/vim-airline'
+	Bundle 'tpope/vim-fugitive'
 	if iCanHazVundle == 0
 		echo "Installing Bundles, ignore key map error messages"
 		echo ""
@@ -29,7 +31,8 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 	endif
 " Setting up Vundle - the vim plugin bundler end
 
-" Settings for Powerline
+" Settings for airline
 set laststatus=2
 set t_Co=256
-let g:Powerline_symbols = 'fancy'
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+let g:airline_powerline_fonts = 1
