@@ -24,6 +24,7 @@ set rtp+=~/.vim/bundle/vundle/
 	"Add your bundles here
 	Bundle 'bling/vim-airline'
 	Bundle 'tpope/vim-fugitive'
+	Bundle 'davidhalter/jedi-vim'
 	if iCanHazVundle == 0
 		echo "Installing Bundles, ignore key map error messages"
 		echo ""
