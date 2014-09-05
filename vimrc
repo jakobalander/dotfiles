@@ -1,10 +1,17 @@
 set nocompatible
 set t_Co=256
 set number
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
 syntax enable
 filetype indent plugin on
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileTYpe c set cinoptions=:0 foldmethod=syntax foldnestmax=1
+au FileType cpp set cinoptions=:0 foldmethod=syntax foldnestmax=1
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 set rtp+=~/.vim/bundle/vundle/
