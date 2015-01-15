@@ -12,6 +12,8 @@ syntax enable
 filetype indent plugin on
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileTYpe c set cinoptions=:0 foldmethod=syntax foldnestmax=1
+au BufNewFile,BufRead *.h set shiftwidth=2 tabstop=3 softtabstop=2 expandtab cindent cinoptions=h1,l1,g1,t0,i4,+4,(0,w1,W4
+
 au FileType cpp set cinoptions=:0 foldmethod=syntax foldnestmax=1
 autocmd BufWritePre *.h :%s/\s\+$//e
 autocmd BufWritePre *.c :%s/\s\+$//e
