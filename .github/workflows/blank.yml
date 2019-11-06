@@ -1,6 +1,6 @@
 name: CI
 
-on: issue
+on: comment
 
 jobs:
   build:
