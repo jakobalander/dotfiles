@@ -1,6 +1,5 @@
 set nocompatible
 set t_Co=256
-"colorscheme darkblue
 set number
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
