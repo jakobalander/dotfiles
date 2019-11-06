@@ -1,6 +1,6 @@
 name: CI
 
-on: issue
+on: pull_request_review_comment
 
 jobs:
   build:
