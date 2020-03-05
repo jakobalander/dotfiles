@@ -1,6 +1,5 @@
 set nocompatible
 set t_Co=256
-"colorscheme darkblue
 set number
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -15,11 +14,14 @@ filetype indent plugin on
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileTYpe c set cinoptions=:0 foldmethod=syntax foldnestmax=1
 au FileType h set cinoptions=:0 foldmethod=syntax foldnestmax=1
-
 au FileType cpp set cinoptions=:0 foldmethod=syntax foldnestmax=1
+au FileType yaml set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+au FileType javascript set tabstop=2 expandtab shiftwidth=2 softtabstop=2
+
 autocmd BufWritePre *.h :%s/\s\+$//e
 autocmd BufWritePre *.c :%s/\s\+$//e
 autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.yaml :%s/\s\+$//e
 
 set rtp+=~/.vim/bundle/vundle/
 " Setting up Vundle - the vim plugin bundler
