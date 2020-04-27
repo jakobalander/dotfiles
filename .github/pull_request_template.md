@@ -1,10 +1,10 @@
 # Prequisites
 
--[ ] Functional requirements
--[ ] Non-functional requirements
+- [ ] Functional requirements
+- [ ] Non-functional requirements
 
-## Code review
--[ ] Technical review
--[ ] Functional review
--[ ] Observability
--[ ] Syntax
+# Code review
+- [ ] Technical review
+- [ ] Functional review
+- [ ] Observability
+- [ ] Syntax
